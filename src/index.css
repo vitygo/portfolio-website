@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Permanent+Marker&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+
+a, a:active{
+  text-decoration: none;
+}
+
+ul{
+  display: flex;
+  gap: 20px;
+}
+
+li{
+  list-style: none;
+}
+
+.navbar a{
+  color: white;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+.navbar{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 1rem 10rem;
+  overflow: hidden;
+}
+
+
+.nav-logo-img{
+  height: 6rem;
+}
+
+.hero-section{
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+  z-index: 10;
+  background: radial-gradient(
+    circle at top left,
+    white 55%,        /* менше білого */
+    #60a5fa 67%,      /* sky blue */
+    #a78bfa 80%,      /* violet */
+    #f472b6 100%      /* pink */
+  );
+  cursor: url('cursor3.png'), auto;
+
+}
+
+.hero-img{
+  margin-top: 200px;
+  height: 50rem;
+}
+
+.hero-title{
+  font-family: "Outfit", sans-serif;
+  font-size: 4.5rem;
+  background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+ 
+}
+
+.hero-text p{
+  max-width: 340px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  color: rgba(0, 0, 0, 0.704);
+}
+
+
+.portfolio-section{
+  background: rgb(0, 0, 0);
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+  
+  
+  
+  
+}
+
+.portfolio-title{ 
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  
+}
+
+.portfolio-text{
+  max-width: 340px;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.704);
+  margin-bottom: 20px;
+
+}
+
+.portfolio-cards{
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+
+}
+
+
+.portfolio-card{
+  height: 20rem;
+  width: 25rem;
+  background: rgb(255, 255, 255);
+  border-radius: 2%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.2s ease;
+
+}
+
+.portfolio-card:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hero-buttons{
+  display: flex;
+  gap: 12px;
+}
+
+.contact-me-btn{
+  color: rgb(255, 255, 255);
+  background: black;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  border: 1px solid black;
+
+}
+
+.github-btn{
+  color: black;
+  background: white;
+  border: 1px solid black;
+  padding: 12px;
+  width: 160px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-border{
+  
+}
+
+
+.left-hero{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+
+}
+
+
+.badge{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border: 0px solid black;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 200px;
+  gap: 5px;
+  border-radius: 20px;
+  padding: 3px;
+}
+
+.badge-btn{
+  display: flex;
+  gap: 2px;
+  color: black;
+  align-items: center;
+}
+
+.badge-line{
+  height: 14px;
+  width: 1px;
+  background: #000000b8;
+  border-radius: 1px;
+}
+
+
+.tech-stack-section{
+  width: 100%;
+  height:21vh;
+  background: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.tech{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-left: 10px;
+}
+
+.tech::before {
+  content: "";
+  position: absolute;
+  left: 0;                   
+  top: 50%;                    
+  transform: translateY(-50%); 
+  width: 2px;
+  height: 25px;  
+  border-radius: 2px;             
+  background: #ccc;
+}
+
+.tech-name{
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-left: 7px;
+
+
+}
+
+.tech-text{
+  width: 200px;
+  margin-left: 7px;
+  color: rgba(0, 0, 0, 0.609);
+  
+
+}

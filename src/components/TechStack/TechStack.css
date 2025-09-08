@@ -107,8 +107,6 @@
   margin-bottom: 0;
 }
 
-
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .tech-stack__grid {
@@ -121,7 +119,7 @@
   }
   .tech-card{
     grid-column: span 3;
-    min-width: 350px !important;
+    width: 500px !important;
     
     
   }

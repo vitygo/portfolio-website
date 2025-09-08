@@ -107,15 +107,23 @@
   margin-bottom: 0;
 }
 
+
+
 /* Responsive Design */
 @media (max-width: 1024px) {
   .tech-stack__grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--spacing-sm);
   }
   
   .tech-stack__title {
     font-size: var(--font-size-2xl);
+  }
+  .tech-card{
+    grid-column: span 3;
+    min-width: 350px !important;
+    
+    
   }
 }
 

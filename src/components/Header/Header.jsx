@@ -31,7 +31,7 @@ const Header = () => {
         <ul className="navbar__social">
           <li>
             <a 
-              href='https://github.com' 
+              href='https://github.com/vitygo' 
               target="_blank" 
               rel="noopener noreferrer"
               aria-label="Visit GitHub profile"

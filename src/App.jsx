@@ -6,10 +6,12 @@ import Portfolio from './components/Portfolio/Portfolio';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
     <>
+      <Toaster />
       <Header />
       <Hero />
       <TechStack />

@@ -270,13 +270,15 @@
   }
   
   .hero__actions {
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
     width: 100%;
-    max-width: 250px;
+    margin-bottom: 140px;
+ 
   }
   
   .hero__btn {
-    width: 100%;
+    width: fit-content;
   }
   
   .hero__badge {
